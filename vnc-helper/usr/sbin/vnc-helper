@@ -1,0 +1,12 @@
+#!/bin/bash
+killall x11vnc
+
+password=$RANDOM
+x11vnc -passwd $password -bg
+
+ip=$(/sbin/ifconfig | grep addr:10. | awk '{print substr($2,6)}')
+
+zenity --info --title="VNC Helper" \
+              --text="Позвоните системному администратору\nНЕ ЗАКРЫВАЙТЕ ЭТО ОКНО\nСледуйте дальнейшим инструкциям\n\nВаш IP:\n$ip \nВаш пароль:\n$password"
+
+killall x11vnc

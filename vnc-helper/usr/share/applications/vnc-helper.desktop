@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=bash vnc-helper
+Icon=gconf-editor
+StartupNotify=false
+Terminal=false
+Categories=X-XFCE;X-Xfce-Toplevel;GNOME;Utility
+OnlyShowIn=XFCE;
+Name=Remote help VNC
+Name[ru]=Удаленная помощь VNC

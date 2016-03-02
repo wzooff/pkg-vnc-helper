@@ -1,0 +1,12 @@
+Package: vnc-helper
+Version: 0.10
+Maintainer: wzooff@gmail.com
+Architecture: all
+Section: utils
+Depends: x11vnc,zenity
+Description: Remote help VNC script
+ Launch VNC server and shows ip and password of local machine
+ .
+ IP must be in subnet range 10.x.x.x or you can edit /usr/sbin/vnc-helper 
+ .
+ Tested on xubuntu
